@@ -28,7 +28,7 @@ public:
   }
 
   virtual bool runOnBasicBlock(BasicBlock &BB)
-  {
+  { // InstructionSimplify and BasicBlockUtil class can help here. Need to read more about them .
     for(BasicBlock::iterator i = BB.begin(), e = BB.end(); i != e ; i++)
     {
       if( i->isBinaryOp() )
