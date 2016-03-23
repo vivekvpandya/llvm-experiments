@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.3.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass
+CMAKE_SOURCE_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/printCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass
+CMAKE_BINARY_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/printCode
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/printCode/CMakeFiles /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/printCode/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/printCode/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,44 +155,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LLVMFuncInfo
+# Target rules for targets named LLVMOptLoads
 
 # Build rule for target.
-LLVMFuncInfo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LLVMFuncInfo
-.PHONY : LLVMFuncInfo
+LLVMOptLoads: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LLVMOptLoads
+.PHONY : LLVMOptLoads
 
 # fast build rule for target.
-LLVMFuncInfo/fast:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/build
-.PHONY : LLVMFuncInfo/fast
+LLVMOptLoads/fast:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/build
+.PHONY : LLVMOptLoads/fast
 
-FunctionInfo.o: FunctionInfo.cpp.o
+instrMap.o: instrMap.cpp.o
 
-.PHONY : FunctionInfo.o
+.PHONY : instrMap.o
 
 # target to build an object file
-FunctionInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.o
-.PHONY : FunctionInfo.cpp.o
+instrMap.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/instrMap.cpp.o
+.PHONY : instrMap.cpp.o
 
-FunctionInfo.i: FunctionInfo.cpp.i
+instrMap.i: instrMap.cpp.i
 
-.PHONY : FunctionInfo.i
+.PHONY : instrMap.i
 
 # target to preprocess a source file
-FunctionInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.i
-.PHONY : FunctionInfo.cpp.i
+instrMap.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/instrMap.cpp.i
+.PHONY : instrMap.cpp.i
 
-FunctionInfo.s: FunctionInfo.cpp.s
+instrMap.s: instrMap.cpp.s
 
-.PHONY : FunctionInfo.s
+.PHONY : instrMap.s
 
 # target to generate assembly for a file
-FunctionInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.s
-.PHONY : FunctionInfo.cpp.s
+instrMap.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/instrMap.cpp.s
+.PHONY : instrMap.cpp.s
+
+optLoads.o: optLoads.cpp.o
+
+.PHONY : optLoads.o
+
+# target to build an object file
+optLoads.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/optLoads.cpp.o
+.PHONY : optLoads.cpp.o
+
+optLoads.i: optLoads.cpp.i
+
+.PHONY : optLoads.i
+
+# target to preprocess a source file
+optLoads.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/optLoads.cpp.i
+.PHONY : optLoads.cpp.i
+
+optLoads.s: optLoads.cpp.s
+
+.PHONY : optLoads.s
+
+# target to generate assembly for a file
+optLoads.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/optLoads.cpp.s
+.PHONY : optLoads.cpp.s
+
+printCode.o: printCode.cpp.o
+
+.PHONY : printCode.o
+
+# target to build an object file
+printCode.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/printCode.cpp.o
+.PHONY : printCode.cpp.o
+
+printCode.i: printCode.cpp.i
+
+.PHONY : printCode.i
+
+# target to preprocess a source file
+printCode.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/printCode.cpp.i
+.PHONY : printCode.cpp.i
+
+printCode.s: printCode.cpp.s
+
+.PHONY : printCode.s
+
+# target to generate assembly for a file
+printCode.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMOptLoads.dir/build.make CMakeFiles/LLVMOptLoads.dir/printCode.cpp.s
+.PHONY : printCode.cpp.s
 
 # Help Target
 help:
@@ -206,10 +260,16 @@ help:
 	@echo "... install"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... LLVMFuncInfo"
-	@echo "... FunctionInfo.o"
-	@echo "... FunctionInfo.i"
-	@echo "... FunctionInfo.s"
+	@echo "... LLVMOptLoads"
+	@echo "... instrMap.o"
+	@echo "... instrMap.i"
+	@echo "... instrMap.s"
+	@echo "... optLoads.o"
+	@echo "... optLoads.i"
+	@echo "... optLoads.s"
+	@echo "... printCode.o"
+	@echo "... printCode.i"
+	@echo "... printCode.s"
 .PHONY : help
 
 

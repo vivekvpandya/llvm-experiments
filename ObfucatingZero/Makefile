@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.3.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass
+CMAKE_SOURCE_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/ObfucatingZero
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass
+CMAKE_BINARY_DIR = /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/ObfucatingZero
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/ObfucatingZero/CMakeFiles /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/ObfucatingZero/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/FunctionInfoPass/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mr.Pandya/My_Stuff/Active/llvm/experiments/ObfucatingZero/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,44 +155,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LLVMFuncInfo
+# Target rules for targets named LLVMObfuscatingZero
 
 # Build rule for target.
-LLVMFuncInfo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LLVMFuncInfo
-.PHONY : LLVMFuncInfo
+LLVMObfuscatingZero: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LLVMObfuscatingZero
+.PHONY : LLVMObfuscatingZero
 
 # fast build rule for target.
-LLVMFuncInfo/fast:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/build
-.PHONY : LLVMFuncInfo/fast
+LLVMObfuscatingZero/fast:
+	$(MAKE) -f CMakeFiles/LLVMObfuscatingZero.dir/build.make CMakeFiles/LLVMObfuscatingZero.dir/build
+.PHONY : LLVMObfuscatingZero/fast
 
-FunctionInfo.o: FunctionInfo.cpp.o
+ObfuscatingZero.o: ObfuscatingZero.cpp.o
 
-.PHONY : FunctionInfo.o
+.PHONY : ObfuscatingZero.o
 
 # target to build an object file
-FunctionInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.o
-.PHONY : FunctionInfo.cpp.o
+ObfuscatingZero.cpp.o:
+	$(MAKE) -f CMakeFiles/LLVMObfuscatingZero.dir/build.make CMakeFiles/LLVMObfuscatingZero.dir/ObfuscatingZero.cpp.o
+.PHONY : ObfuscatingZero.cpp.o
 
-FunctionInfo.i: FunctionInfo.cpp.i
+ObfuscatingZero.i: ObfuscatingZero.cpp.i
 
-.PHONY : FunctionInfo.i
+.PHONY : ObfuscatingZero.i
 
 # target to preprocess a source file
-FunctionInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.i
-.PHONY : FunctionInfo.cpp.i
+ObfuscatingZero.cpp.i:
+	$(MAKE) -f CMakeFiles/LLVMObfuscatingZero.dir/build.make CMakeFiles/LLVMObfuscatingZero.dir/ObfuscatingZero.cpp.i
+.PHONY : ObfuscatingZero.cpp.i
 
-FunctionInfo.s: FunctionInfo.cpp.s
+ObfuscatingZero.s: ObfuscatingZero.cpp.s
 
-.PHONY : FunctionInfo.s
+.PHONY : ObfuscatingZero.s
 
 # target to generate assembly for a file
-FunctionInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/LLVMFuncInfo.dir/build.make CMakeFiles/LLVMFuncInfo.dir/FunctionInfo.cpp.s
-.PHONY : FunctionInfo.cpp.s
+ObfuscatingZero.cpp.s:
+	$(MAKE) -f CMakeFiles/LLVMObfuscatingZero.dir/build.make CMakeFiles/LLVMObfuscatingZero.dir/ObfuscatingZero.cpp.s
+.PHONY : ObfuscatingZero.cpp.s
 
 # Help Target
 help:
@@ -203,13 +203,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... LLVMObfuscatingZero"
 	@echo "... install"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... LLVMFuncInfo"
-	@echo "... FunctionInfo.o"
-	@echo "... FunctionInfo.i"
-	@echo "... FunctionInfo.s"
+	@echo "... ObfuscatingZero.o"
+	@echo "... ObfuscatingZero.i"
+	@echo "... ObfuscatingZero.s"
 .PHONY : help
 
 
